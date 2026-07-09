@@ -3305,8 +3305,7 @@ async function handleEditBookSubmit(event) {
 // =========================================================
 // اكتشاف الرابط تلقائياً ليعمل محلياً أو على الاستضافة
 const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-let gateway = `${wsProtocol}//${window.location.host}/ws`;
-let websocket;
+let gateway = 'wss://library-backend-production-8c43.up.railway.app/ws';let websocket;
 let wsReconnectDelay = 1000;
 const WS_RECONNECT_MAX = 30000;
 let wsConnectedAt = 0;
